@@ -1,6 +1,6 @@
 # Introduction
 
-**Plural** is a Solana-based governance toolkit for fostering inclusing institutions
+**Plural** is a Solana-based governance toolkit for fostering inclusive institutions
 and empowering collective ownership and decision making.
 
 The ability for groups of people to come together, to form strong cohesive and
@@ -13,5 +13,5 @@ people. This challenge is exactly what Plural looks at tackling.
 
 
 ::: tip NOTE
-Plural is still a work in progress. It's API's are subject to change.
+Plural is still a work in progress. Its API's are subject to change.
 :::

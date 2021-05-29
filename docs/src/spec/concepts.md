@@ -30,9 +30,7 @@ The full list of policies can be found [here](../usage/policies.md)
 
 ## Framework
 
-The framework delves more into the composition of the design itself whilst still remaining high level. For more in depth description, refer to either the state or messages section. As the implementation is written in rust, the spec is also defined in rust. The contract is built using Anchor.
-
-[project-serum/anchor](https://github.com/project-serum/anchor)
+The framework delves more into the composition of the design itself whilst still remaining high level. For more in depth description, refer to either the state or messages section. As the implementation is written in rust, the spec is also defined in rust. The contract is built using [Anchor](https://github.com/project-serum/anchor).
 
 ### Groups
 
