@@ -16,10 +16,16 @@ dependencies = [
 ]
 
 [[package]]
-name = "anchor-attribute-access-control"
-version = "0.6.0"
+name = "alloc-traits"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c067431bb0b1d6d909f220abc6cc3025bd75645f188fe09902b4074e2e43a7c0"
+checksum = "6b2d54853319fd101b8dd81de382bcbf3e03410a64d8928bbee85a3e7dcde483"
+
+[[package]]
+name = "anchor-attribute-access-control"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "59a5a5b14eaa4535945c4799a2121d935dea2aa990e89b892985434471ed05ae"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -31,9 +37,9 @@ dependencies = [
 
 [[package]]
 name = "anchor-attribute-account"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f4a061e5d0916a9ec1c57df95809cafb3a405b23bfb74c0ba4525fc81a8a246b"
+checksum = "e1076ad7bc578c864fa559f16c172c1463d8cb02b6443b8061e623c212652921"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -44,9 +50,9 @@ dependencies = [
 
 [[package]]
 name = "anchor-attribute-error"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1154dad45d51ae30b9bc2dffe8b4a0593ec07fe6ec146b9c38b102d777e87810"
+checksum = "7acb3a4f83627cce3912d9915acf7db78b5f7c3fbec8375ba766db2f58aa2054"
 dependencies = [
  "anchor-syn",
  "proc-macro2",
@@ -56,9 +62,9 @@ dependencies = [
 
 [[package]]
 name = "anchor-attribute-event"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2865d595f1ed4335136bb40d79244798377872496bdb96554b05980118ca7e60"
+checksum = "e396eb7941e35f545e11d499300d738feccdc920e7dbcea30adcce349669e545"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -69,9 +75,9 @@ dependencies = [
 
 [[package]]
 name = "anchor-attribute-interface"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f707d04c5924e4d43af28074f7c7f85751c16c9d9487da4b70c32433a68316e6"
+checksum = "848ddeeeffdf3e3c2ea006bd8b00716bebae6ba92aeb34bdb7db16bc7744fb7e"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -83,9 +89,9 @@ dependencies = [
 
 [[package]]
 name = "anchor-attribute-program"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5e46aa216a1dc47a80bfb0fbf3503cedcbf795589661b2a4821904df18966874"
+checksum = "fc72e379b34a4f975f02dd6b500126e381000fd526e4388072fa2ef5e4aef2db"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -96,9 +102,9 @@ dependencies = [
 
 [[package]]
 name = "anchor-attribute-state"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "917574420dd808ea48736a35816dace30bfe74378355056d4c64fe68c69a3a5f"
+checksum = "75d9cfa1d15e665f6c67e3bfb3d95069edfaaf140bf0c2c3f9f78455bed45ef4"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -109,9 +115,9 @@ dependencies = [
 
 [[package]]
 name = "anchor-derive-accounts"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6f05a9fcdea6ed90ed1e57915fed330f6f914daaca46f2b7501a1aa82a13c966"
+checksum = "89e0562d6e20af401acc334db975adf2f4243096102188d53ba767ebd47da93c"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -122,9 +128,9 @@ dependencies = [
 
 [[package]]
 name = "anchor-lang"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6b257d1f02fa4882201c6d0a58a8955d6ee390a1c68ad5e05218d411e9c58b0f"
+checksum = "8eab80a68813ec31bd9068e7e16665aae7d0bf1a96ef032155b837d66ed91620"
 dependencies = [
  "anchor-attribute-access-control",
  "anchor-attribute-account",
@@ -142,10 +148,23 @@ dependencies = [
 ]
 
 [[package]]
-name = "anchor-syn"
-version = "0.6.0"
+name = "anchor-spl"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5297ff26807bf7eb1156d53982b413ec2ce7759d997738769ad1e6c55f0f9f45"
+checksum = "dc7645f58767121a6e04681a444af5358c5780d211cffb2793b4e6c3d1de3c72"
+dependencies = [
+ "anchor-lang",
+ "lazy_static",
+ "serum_dex",
+ "solana-program",
+ "spl-token",
+]
+
+[[package]]
+name = "anchor-syn"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dbf72c2970b8dd3c81aa7da780357d24d535f11d878cbf186662a60c09771f6d"
 dependencies = [
  "anyhow",
  "bs58",
@@ -370,6 +389,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "derivative"
+version = "2.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fcc3dd5e9e9c0b295d6e1e4d811fb6f157d5ffd784b8d202fc62eac8035a770b"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "digest"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -394,6 +424,26 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e78d4f1cc4ae33bbfc157ed5d5a5ef3bc29227303d595861deb238fcec4e9457"
 
 [[package]]
+name = "enumflags2"
+version = "0.6.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "83c8d82922337cd23a15f88b70d8e4ef5f11da38dd7cdb55e84dd5de99695da0"
+dependencies = [
+ "enumflags2_derive",
+]
+
+[[package]]
+name = "enumflags2_derive"
+version = "0.6.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "946ee94e3dbf58fdd324f9ce245c7b238d46a66f00e86a020b71996349e46cce"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "env_logger"
 version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -411,6 +461,16 @@ name = "feature-probe"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "835a3dc7d1ec9e75e2b5fb4ba75396837112d2060b03f7d43bc1897c7f7211da"
+
+[[package]]
+name = "field-offset"
+version = "0.3.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1e1c54951450cbd39f3dbcf1005ac413b49487dabf18a720ad2383eccfeffb92"
+dependencies = [
+ "memoffset",
+ "rustc_version 0.3.3",
+]
 
 [[package]]
 name = "generic-array"
@@ -540,6 +600,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "memoffset"
+version = "0.6.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "59accc507f1338036a0477ef61afdae33cde60840f4dfe481319ce3ad116ddf9"
+dependencies = [
+ "autocfg",
+]
+
+[[package]]
 name = "num-derive"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -560,16 +629,48 @@ dependencies = [
 ]
 
 [[package]]
+name = "num_enum"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "226b45a5c2ac4dd696ed30fa6b94b057ad909c7b7fc2e0d0808192bced894066"
+dependencies = [
+ "derivative",
+ "num_enum_derive",
+]
+
+[[package]]
+name = "num_enum_derive"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1c0fd9eba1d5db0994a239e09c1be402d35622277e35468ba891aa5e3188ce7e"
+dependencies = [
+ "proc-macro-crate",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "opaque-debug"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "624a8340c38c1b80fd549087862da4ba43e08858af025b236e509b6649fc13d5"
 
 [[package]]
+name = "pest"
+version = "2.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "10f4872ae94d7b90ae48754df22fd42ad52ce740b8f370b03da4835417403e53"
+dependencies = [
+ "ucd-trie",
+]
+
+[[package]]
 name = "plural"
 version = "0.1.0"
 dependencies = [
  "anchor-lang",
+ "anchor-spl",
 ]
 
 [[package]]
@@ -669,7 +770,16 @@ version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "138e3e0acb6c9fb258b19b67cb8abd63c00679d2851805ea151465464fe9030a"
 dependencies = [
- "semver",
+ "semver 0.9.0",
+]
+
+[[package]]
+name = "rustc_version"
+version = "0.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f0dfe2087c51c460008730de8b57e6a320782fbfb312e1f4d520e6c6fae155ee"
+dependencies = [
+ "semver 0.11.0",
 ]
 
 [[package]]
@@ -685,12 +795,27 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "71d301d4193d031abdd79ff7e3dd721168a9572ef3fe51a1517aba235bd8f86e"
 
 [[package]]
+name = "safe-transmute"
+version = "0.11.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "98a01dab6acf992653be49205bdd549f32f17cb2803e8eacf1560bf97259aae8"
+
+[[package]]
 name = "semver"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1d7eb9ef2c18661902cc47e535f9bc51b78acd254da71d375c2f6720d9a40403"
 dependencies = [
- "semver-parser",
+ "semver-parser 0.7.0",
+]
+
+[[package]]
+name = "semver"
+version = "0.11.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f301af10236f6df4160f7c3f04eec6dbc70ace82d23326abad5edee88801c6b6"
+dependencies = [
+ "semver-parser 0.10.2",
 ]
 
 [[package]]
@@ -698,6 +823,15 @@ name = "semver-parser"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "388a1df253eca08550bef6c72392cfe7c30914bf41df5269b68cbd6ff8f570a3"
+
+[[package]]
+name = "semver-parser"
+version = "0.10.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "00b0bef5b7f9e0df16536d3961cfb6e84331c065b4066afb39768d0e319411f7"
+dependencies = [
+ "pest",
+]
 
 [[package]]
 name = "serde"
@@ -740,6 +874,30 @@ dependencies = [
 ]
 
 [[package]]
+name = "serum_dex"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dafc59d6c9502642898caafe8879ff7383c811cb0d6ca3a9e9b96feba9955465"
+dependencies = [
+ "arrayref",
+ "bincode",
+ "bytemuck",
+ "byteorder",
+ "enumflags2",
+ "field-offset",
+ "itertools",
+ "num-traits",
+ "num_enum",
+ "safe-transmute",
+ "serde",
+ "solana-program",
+ "spl-token",
+ "static_assertions",
+ "thiserror",
+ "without-alloc",
+]
+
+[[package]]
 name = "sha2"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -775,7 +933,7 @@ dependencies = [
  "generic-array 0.14.4",
  "log",
  "memmap2",
- "rustc_version",
+ "rustc_version 0.2.3",
  "serde",
  "serde_derive",
  "sha2",
@@ -793,7 +951,7 @@ dependencies = [
  "lazy_static",
  "proc-macro2",
  "quote",
- "rustc_version",
+ "rustc_version 0.2.3",
  "syn",
 ]
 
@@ -828,7 +986,7 @@ dependencies = [
  "num-derive",
  "num-traits",
  "rand",
- "rustc_version",
+ "rustc_version 0.2.3",
  "rustversion",
  "serde",
  "serde_bytes",
@@ -854,6 +1012,26 @@ dependencies = [
  "rustversion",
  "syn",
 ]
+
+[[package]]
+name = "spl-token"
+version = "3.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fbfa8fd791aeb4d7ad5fedb7872478de9f4e8b4fcb02dfd9e7f2f9ae3f3ddd73"
+dependencies = [
+ "arrayref",
+ "num-derive",
+ "num-traits",
+ "num_enum",
+ "solana-program",
+ "thiserror",
+]
+
+[[package]]
+name = "static_assertions"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
 
 [[package]]
 name = "subtle"
@@ -917,6 +1095,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "879f6906492a7cd215bfa4cf595b600146ccfac0c79bcbd1f3000162af5e8b06"
 
 [[package]]
+name = "ucd-trie"
+version = "0.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "56dee185309b50d1f11bfedef0fe6d036842e3fb77413abef29f8f8d1c5d4c1c"
+
+[[package]]
 name = "unicode-segmentation"
 version = "1.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -970,6 +1154,15 @@ name = "winapi-x86_64-pc-windows-gnu"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
+
+[[package]]
+name = "without-alloc"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5e34736feff52a0b3e5680927e947a4d8fac1f0b80dc8120b080dd8de24d75e2"
+dependencies = [
+ "alloc-traits",
+]
 
 [[package]]
 name = "zeroize"
