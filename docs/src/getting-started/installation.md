@@ -1,11 +1,11 @@
-# Installing Dependencies
+# Installation
 
 To get started, make sure to setup all the prerequisite tools on your local machine
 (an installer has not yet been developed).
 
 ## Install Rust
 
-For an introduction to Rust, see the excellent Rust [book](https://doc.rust-lang.org/book/).
+For an introduction to Rust, visit the [docs website](https://doc.rust-lang.org/).
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -28,5 +28,16 @@ install the Anchor CLI run,
 
 ```bash
 cargo install --git https://github.com/project-serum/anchor --tag v0.6.0 anchor-cli --locked
+```
+
+## Build and Deploy Plural
+
+First make sure you are in the repo directory,
+
+```bash
+anchor build
+```
+```bash
+anchor deploy
 ```
 

@@ -13,5 +13,5 @@ people. This challenge is exactly what Plural looks at tackling.
 
 
 ::: tip NOTE
-Plural is still a work in progress. Its API's are subject to change.
+Plural is still a work in progress. Its API's and this documentation are subject to change. 
 :::

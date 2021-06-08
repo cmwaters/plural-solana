@@ -2,7 +2,7 @@
 
 *This section outlines the composition and structure of the governance entity or contract held in Solana.*
 
-Here we get closer to the code. It's important to note that this section is still a WIP
+Here we get closer to the code. It's important to note that this section is still a WIP. For the most up to date state, refer to the code.
 
 ```rust
 #[state]
@@ -21,7 +21,7 @@ pub struct Polity {
 	last_proposal_id: u32
 
 	// used to store the deposits of active proposals
-	depositVault: CpiAccount<'info, TokenAccount>
+	deposit_vault: CpiAccount<'info, TokenAccount>
 }
 ```
 
@@ -34,6 +34,8 @@ pub struct Member {
 	// the account (this can theoretically be another DAO)
 	pub account: Pubkey
 
+	pub policy: VersionedPolicy
+
 	// the accumulated voting power
 	pub tokens: u64
 
@@ -41,12 +43,13 @@ pub struct Member {
 	pub weight: u32
 
 	// array of indexes corresponding to roles that the member has
-	pub roleCode: Vec<u8>
+	pub role_code: Vec<u8>
 }
 ```
 
 ```rust
 pub struct Role {
+	// a list of permissions that the role has
 	permissions: Vec<Permission>
 }
 

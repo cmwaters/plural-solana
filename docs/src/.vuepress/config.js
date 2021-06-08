@@ -33,6 +33,7 @@ module.exports = {
   themeConfig: {
     repo: "",
     editLinks: false,
+    logo: "/plural_logo.svg",
     docsDir: "",
     editLinkText: "",
     lastUpdated: true,
@@ -46,16 +47,16 @@ module.exports = {
           "/getting-started/installation",
         ],
       },
-      // {
-      //   collapsable: false,
-      //   title: "How do I use it",
-      //   children: [
-      //     "/usage/deploy",
-      //     "/usage/policies",
-      //     "/usage/use-cases",
-      //     "/usage/testnet"
-      //   ],
-      // },
+      {
+        collapsable: false,
+        title: "How do I use it",
+        children: [
+          // "/usage/deploy",
+          "/usage/policies",
+          "/usage/use-cases",
+          // "/usage/testnet"
+        ],
+      },
       {
         collapsable: false,
         title: "How does it work",
@@ -63,7 +64,6 @@ module.exports = {
           "/spec/concepts",
           "/spec/messages",
           "/spec/state",
-          "/usage/policies",
         ],
       },
       
