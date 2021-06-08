@@ -49,21 +49,21 @@ module.exports = {
       },
       {
         collapsable: false,
+        title: "How does it work",
+        children: [
+          "/spec/concepts",
+          "/spec/messages",
+          "/spec/state",
+        ],
+      },
+      {
+        collapsable: false,
         title: "How do I use it",
         children: [
           // "/usage/deploy",
           "/usage/policies",
           "/usage/use-cases",
           // "/usage/testnet"
-        ],
-      },
-      {
-        collapsable: false,
-        title: "How does it work",
-        children: [
-          "/spec/concepts",
-          "/spec/messages",
-          "/spec/state",
         ],
       },
       
